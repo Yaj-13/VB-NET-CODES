@@ -142,6 +142,22 @@ End If
         Next
 
 ```
+##### do until loop
+```vbnet
+ 
+       Dim num As Integer = InputBox("give me a number", "questin")
+
+ Do Until num > 10
+     MessageBox.Show("number is " & num)
+
+     If num > 10 Then
+         num -= 1
+     Else
+         num += 1
+     End If
+ Loop
+
+```
 ##### functions
 ```vbnet
  Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
